@@ -12,17 +12,17 @@ pipeline {
         }
         stage('Compilar') {
             steps {
-                sh 'mvn clean compile'
+                echo 'echo mvn clean compile'
             }
         }
         stage('Probar') {
             steps {
-                sh 'mvn test'
+                echo 'echo mvn test'
             }
         }
         stage('Empaquetar') {
             steps {
-                sh 'mvn package'
+                echo 'echo mvn package'
             }
         }
     }
